@@ -1,0 +1,49 @@
+/* Global */
+body {
+  padding 0;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/* Nav */
+.nav-top {
+  font-weight: bold;
+}
+
+#brand{
+  color: red;
+}
+
+/*intro */
+.intro {
+  min-height: 200px;
+  background: url("../img/jumbo.jpg") no-repeat 0 -200px;
+  background-size: cover;
+  border-top: solid red 2px;
+}
+
+.jumbotron {
+  border-radius: 0;
+  text-align: center;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* About & weight */
+.headers{
+  text-align: center;
+  text-decoration: underline red;
+}
+
+.weight img{
+  width: 30vw;
+}
+.wtext{
+  margin-left: 100px;
+}
