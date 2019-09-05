@@ -1,8 +1,76 @@
 /* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   padding 0;
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  margin-bottom: 170px;
+}
+
+footer {
+  background-color: #343a40 !important;
+  border-top: solid red 2px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer .container {
+  text-align: center;
+}
+
+/* Global buttons */
+.buttons {
+  margin-top: 15px;
+}
+
+.preBtn {
+  float: left;
+}
+
+.nxtBtn {
+  float: right;
+}
+
+.buttons a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #343a40;
+  color: white;
+}
+
+.buttons a:hover {
+  background-color: white;
+  color: red;
+  text-decoration: none;
+}
+
+.round {
+  border-radius: 50%;
 }
 
 .container {
@@ -10,19 +78,23 @@ body {
   margin: auto;
   overflow: hidden;
 }
-/* Nav */
+
+/* Global Nav */
 .nav-top {
   font-weight: bold;
 }
 
-#brand{
+#brand {
   color: red;
 }
 
 /*intro */
 .intro {
   min-height: 200px;
-  background: url("../img/jumbo.jpg") no-repeat 0 -200px;
+  background: url("../img/gym.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   border-top: solid red 2px;
 }
@@ -35,15 +107,74 @@ body {
   color: #fff;
 }
 
-/* About & weight */
-.headers{
+.headers {
   text-align: center;
   text-decoration: underline red;
 }
 
-.weight img{
-  width: 30vw;
+/* Main index  */
+
+/* About & weight */
+.weight img {
+  width: 80%;
 }
-.wtext{
+
+.wtext {
   margin-left: 100px;
+  margin-top: 15px;
+}
+
+.weight span {
+  margin: 0 5px;
+  background-color: #343a40;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: underline red;
+  border: solid 1px red;
+  color: white;
+}
+
+/*Workout page */
+/* intro */
+
+#workintro {
+  min-height: 150px;
+}
+
+table {
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+table, th, td {
+  padding: 15px;
+  border: 1px solid black;
+}
+
+/*Workout Grid*/
+/*
+.cols {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  width: 250px;
+}*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1em;
+  align-items: center;
+}
+.pushItem {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.pushItem h6 {
+  text-align: center;
+}
+
+.chestwords ol{
+  padding-left: 15px;
 }
