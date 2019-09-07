@@ -141,10 +141,20 @@ footer .container {
   min-height: 150px;
 }
 
+.schedule {
+  overflow: auto;
+}
+
+.schedule table th {
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 2px;
+}
+
 table {
   margin: auto;
   text-align: center;
-  display: none;
 }
 
 table, th, td {
@@ -162,19 +172,23 @@ table, th, td {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   grid-gap: 1em;
-  align-items: center;
 }
+
 .pushItem {
   border: 1px solid black;
-  padding: 15px;
+  width: 250px;
 }
 
 .pushItem h6 {
   text-align: center;
 }
 
-.chestwords ol{
-  padding-left: 15px;
+.pushItem img {
+  width: 100%;
+}
+
+.pushText {
+  padding: 15px;
 }
