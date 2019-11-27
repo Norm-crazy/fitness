@@ -42,7 +42,41 @@ footer .container {
   text-align: center;
 }
 
-/* Global buttons */
+/* Global Nav */
+.nav-top {
+  font-weight: bold;
+}
+
+#brand {
+  color: red;
+}
+
+/*Global intro */
+.intro {
+  min-height: 200px;
+  background: url("../img/gym.jpg") no-repeat center center fixed;
+  background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top: solid red 2px;
+}
+
+.jumbotron {
+  border-radius: 0;
+  text-align: center;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.headers {
+  text-align: center;
+  text-decoration: underline red;
+}
+
+/* Global Page Buttons */
 .buttons {
   margin-top: 15px;
 }
@@ -79,41 +113,7 @@ footer .container {
   overflow: hidden;
 }
 
-/* Global Nav */
-.nav-top {
-  font-weight: bold;
-}
-
-#brand {
-  color: red;
-}
-
-/*intro */
-.intro {
-  min-height: 200px;
-  background: url("../img/gym.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-top: solid red 2px;
-}
-
-.jumbotron {
-  border-radius: 0;
-  text-align: center;
-  background: transparent;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-}
-
-.headers {
-  text-align: center;
-  text-decoration: underline red;
-}
-
 /* Main index  */
-
 /* About & weight */
 .weight img {
   width: 80%;
@@ -136,7 +136,6 @@ footer .container {
 
 /*Workout page */
 /* intro */
-
 #workintro {
   min-height: 150px;
 }
@@ -162,18 +161,120 @@ table, th, td {
   border: 1px solid black;
 }
 
-/*Workout Grid*/
-/*
-.cols {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 15px;
-  width: 250px;
-}*/
+/* Workout Grids */
+.btns button {
+  padding: 8px;
+  margin: 5px 2px;
+  width: 6em;
+}
+
+.btns button:hover {
+  background-color: red;
+  color: white;
+  outline: none;
+}
+
+.btn button:focus {
+  outline: 0;
+}
+
+.btnColor {
+  background-color: red;
+  color: white;
+}
+
+.btnColor:focus {
+  outline: 0;
+}
+
+.pushSection {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 125px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  background-color: red;
+  color: white;
+}
+
+.nav-pills .nav-link, .nav-tabs .nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.borderTabsTest {
+  border: 1px solid #060606de !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #ff0a0a !important;
+}
+
+#tabsRight {
+  border-right: 1px solid;
+}
+
+.subTabText {
+  margin-top: 15px;
+}
+
+.chest-fly{
+  display: block;
+  margin: auto;
+}
+
+.pushHeaders {
+  display: block;
+  text-align: center;
+  margin: 16px auto;
+  width: 50%;
+  border-bottom: 1px solid red;
+}
+
+.chestPressImg {
+  width: 22em;
+  min-width: 214px;
+  padding: 12px;
+}
+
+.showTabs {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      Display for referance                       */
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   grid-gap: 1em;
+}
+
+.pushTest {
+  border: 1px solid black;
+}
+
+.pushTest img {
+  width: 100%;
 }
 
 .pushItem {
@@ -191,4 +292,12 @@ table, th, td {
 
 .pushText {
   padding: 15px;
+}
+
+.pushText ul {
+  padding-left: 12px
+}
+
+.hidPushs {
+  margin-top: 50px;
 }
