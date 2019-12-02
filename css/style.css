@@ -187,7 +187,7 @@ table, th, td {
   outline: 0;
 }
 
-.pushSection {
+.workoutSection {
   border: 1px solid black;
   padding: 5px;
   margin-bottom: 125px;
@@ -240,64 +240,6 @@ table, th, td {
   padding: 12px;
 }
 
-.showTabs {
+.pullDays, .pushDays {
   display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*      Display for referance                       */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-gap: 1em;
-}
-
-.pushTest {
-  border: 1px solid black;
-}
-
-.pushTest img {
-  width: 100%;
-}
-
-.pushItem {
-  border: 1px solid black;
-  width: 250px;
-}
-
-.pushItem h6 {
-  text-align: center;
-}
-
-.pushItem img {
-  width: 100%;
-}
-
-.pushText {
-  padding: 15px;
-}
-
-.pushText ul {
-  padding-left: 12px
-}
-
-.hidPushs {
-  margin-top: 50px;
 }

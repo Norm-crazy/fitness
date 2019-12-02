@@ -65,13 +65,12 @@
         <table>
           <thead>
             <tr>
-              <th>Monday</th>
               <th>Tuesday</th>
-              <th>Wednesday</th>
+              <th>Wendsays</th>
               <th>Thursday</th>
               <th>Friday</th>
               <th>Saturday</th>
-              <th>Sunday</th>
+              <th>Sunday & Monday</th>
             </tr>
           </thead>
           <tbody>
@@ -81,7 +80,6 @@
               <td>Cardio</td>
               <td>Push</td>
               <td>Pull</td>
-              <td>Rest</td>
               <td>Rest</td>
             </tr>
           </tbody>
@@ -93,18 +91,18 @@
   <br>
 
   <!-- Workouts -->
-  <div class="mx-auto btns" style="width: 200px;">
+  <div class="mx-auto btns" style="width: 300px;">
     <button class="push" type="button" name="push">Push</button>
+    <button class="cardio" type="button" name="cardio">Cardio</button>
     <button class="pull" type="button" name="pull">Pull</button>
   </div>
 
-  <div class="container pushSection">
-
-    <div class="row" id="pushDays">
+  <div class="container workoutSection pushDays">
+    <div class="row">
       <!-- Main Tabs -->
       <div class="col" id="tabsRight">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link sideTabs" id="v-pills-chest-tab" data-toggle="pill" href="#v-pills-chest" role="tab" aria-controls="v-pills-chest" aria-selected="true">Chest</a>
+          <a class="nav-link sideTabs  active" id="v-pills-chest-tab" data-toggle="pill" href="#v-pills-chest" role="tab" aria-controls="v-pills-chest" aria-selected="true">Chest</a>
           <a class="nav-link  sideTabs" id="v-pills-leg-tab" data-toggle="pill" href="#v-pills-leg" role="tab" aria-controls="v-pills-leg" aria-selected="false">Leg</a>
           <a class="nav-link sideTabs" id="v-pills-shoulders-tab" data-toggle="pill" href="#v-pills-shoulders" role="tab" aria-controls="v-pills-shoulders" aria-selected="false">Shoulders</a>
           <a class="nav-link sideTabs" id="v-pills-triceps-tab" data-toggle="pill" href="#v-pills-triceps" role="tab" aria-controls="v-pills-triceps" aria-selected="false">Triceps</a>
@@ -116,16 +114,11 @@
 
           <!--Chest workouts -->
           <div class="tab-pane fade show active" id="v-pills-chest" role="tabpanel" aria-labelledby="v-pills-chest-tab">
-            <div class="hideInfo text-center">
-              <h2>Click one of the side tabs to see an area I workout on Push days.</h2>
-              <p>I do not do every workout on the same day. I rotate the exercises on each day and will do about 2 or 3 per-muscle groups.
-              </p>
-            </div>
             <div class="showTabs">
               <!-- Main Tab of muscle area -->
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link subTabs borderTabsTest" id="chestPress-tab" data-toggle="tab" href="#chestPress" role="tab" aria-controls="chestPress" aria-selected="true">Chest Press</a>
+                  <a class="nav-link subTabs borderTabsTest active" id="chestPress-tab" data-toggle="tab" href="#chestPress" role="tab" aria-controls="chestPress" aria-selected="true">Chest Press</a>
                 </li>
                 <li class="nav-item subTabs">
                   <a class="nav-link borderTabsTest" id="fly-tab" data-toggle="tab" href="#chestFlys" role="tab" aria-controls="chestFlys" aria-selected="false">Chest Flys</a>
@@ -138,13 +131,10 @@
                 </li>
               </ul>
 
-              <div class="subTabText text-center">
-                <h4>Click a Sub tab to see the workouts</h4>
-              </div>
               <div class="tab-content" id="myTabContent">
 
                 <!--Chest Press -->
-                <div class="tab-pane fade show" id="chestPress" role="tabpanel" aria-labelledby="chestPress-tab">
+                <div class="tab-pane fade show active" id="chestPress" role="tabpanel" aria-labelledby="chestPress-tab">
                   <section>
                     <div>
                       <h5 class="pushHeaders">Chest Press</h5>
@@ -236,12 +226,12 @@
             <div class="showTabs">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link subTabs borderTabsTest" id="LegPress-tab" data-toggle="tab" href="#legPush" role="tab" aria-controls="legPress" aria-selected="true">Leg Press</a>
+                  <a class="nav-link subTabs borderTabsTest active " id="LegPress-tab" data-toggle="tab" href="#legPush" role="tab" aria-controls="legPress" aria-selected="true">Leg Press</a>
                 </li>
               </ul>
               <div class="tab-content" id="myTabContent">
                 <!--Leg Press -->
-                <div class="tab-pane fade show" id="legPush" role="tabpanel" aria-labelledby="leg-tab">
+                <div class="tab-pane fade show active" id="legPush" role="tabpanel" aria-labelledby="leg-tab">
                   <section>
                     <div>
                       <h5 class="pushHeaders">Leg Press</h5>
@@ -269,7 +259,7 @@
             <div class="showTabs">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link subTabs borderTabsTest" id="shoulderPress-tab" data-toggle="tab" href="#shoulderPress" role="tab" aria-controls="shoulderPress" aria-selected="true">Seated Overhead Press</a>
+                  <a class="nav-link subTabs borderTabsTest active" id="shoulderPress-tab" data-toggle="tab" href="#shoulderPress" role="tab" aria-controls="shoulderPress" aria-selected="true">Seated Overhead Press</a>
                 </li>
                 <li class="nav-item subTabs">
                   <a class="nav-link borderTabsTest" id="shoulder-FrontRaise-tab" data-toggle="tab" href="#shoulder-FrontRaise" role="tab" aria-controls="shoulder-FrontRaise" aria-selected="false">Shoulder Raise</a>
@@ -285,7 +275,7 @@
               <div class="tab-content" id="myTabContent">
 
                 <!--Shoulder Press -->
-                <div class="tab-pane fade show" id="shoulderPress" role="tabpanel" aria-labelledby="shoulderPress-tab">
+                <div class="tab-pane fade show active" id="shoulderPress" role="tabpanel" aria-labelledby="shoulderPress-tab">
                   <section>
                     <div>
                       <h5 class="pushHeaders">Seated Dumbbell Overhead Press</h5>
@@ -373,15 +363,441 @@
           </div>
 
           <!-- Triceps-->
-          
+          <div class="tab-pane fade show" id="v-pills-triceps" role="tabpanel" aria-labelledby="v-pills-triceps-tab">
+            <div class="showTabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link subTabs borderTabsTest active" id="tricepExtension-tab" data-toggle="tab" href="#tricepExtension" role="tab" aria-controls="tricepExtension" aria-selected="true">Machine Extension</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="OverheadTri-tab" data-toggle="tab" href="#OverheadTri" role="tab" aria-controls="OverheadTri" aria-selected="false">Overhead Extension</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="dip-tab" data-toggle="tab" href="#pushDown" role="tab" aria-controls="chestDip" aria-selected="false">Push Down</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
 
+                <!-- Extension -->
+                <div class="tab-pane fade show active" id="tricepExtension" role="tabpanel" aria-labelledby="tricepExtension-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Machine Triceps Extension</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/triceps/Machine-triceps-extension.png" alt="Machine Triceps Extension Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
 
+                <!-- Overhead -->
+                <div class="tab-pane fade" id="OverheadTri" role="tabpanel" aria-labelledby="OverheadTri-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Seated Dumbbell Overhead Triceps Extension</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/triceps/seated-dumbbell-overhead-triceps-extension.png" alt="">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
 
+                <!--push-down -->
+                <div class="tab-pane fade" id="pushDown" role="tabpanel" aria-labelledby="pushDown-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Triceps Rope Push-Down</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/triceps/Triceps-Rope-Push-down.png" alt="Push Down Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="container workoutSection pullDays">
+    <div class="row">
+      <!-- Main Tabs -->
+      <div class="col" id="tabsRight">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link sideTabs  active" id="v-pills-chest-tab" data-toggle="pill" href="#v-pills-chest" role="tab" aria-controls="v-pills-chest" aria-selected="true">Chest</a>
+          <a class="nav-link  sideTabs" id="v-pills-leg-tab" data-toggle="pill" href="#v-pills-leg" role="tab" aria-controls="v-pills-leg" aria-selected="false">Leg</a>
+          <a class="nav-link sideTabs" id="v-pills-shoulders-tab" data-toggle="pill" href="#v-pills-shoulders" role="tab" aria-controls="v-pills-shoulders" aria-selected="false">Shoulders</a>
+          <a class="nav-link sideTabs" id="v-pills-triceps-tab" data-toggle="pill" href="#v-pills-triceps" role="tab" aria-controls="v-pills-triceps" aria-selected="false">Triceps</a>
+        </div>
+      </div>
+      <!-- Tabs Content -->
+      <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <h1>testing</h1>
+          <!--Chest workouts -->
+          <div class="tab-pane fade show active" id="v-pills-chest" role="tabpanel" aria-labelledby="v-pills-chest-tab">
+            <div class="showTabs">
+              <!-- Main Tab of muscle area -->
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link subTabs borderTabsTest active" id="chestPress-tab" data-toggle="tab" href="#chestPress" role="tab" aria-controls="chestPress" aria-selected="true">Chest Press</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="fly-tab" data-toggle="tab" href="#chestFlys" role="tab" aria-controls="chestFlys" aria-selected="false">Chest Flys</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="dip-tab" data-toggle="tab" href="#chestDip" role="tab" aria-controls="chestDip" aria-selected="false">Chest Dip</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="bell-tab" data-toggle="tab" href="#dumbBell" role="tab" aria-controls="dumbBell" aria-selected="false">Dumbbell Press</a>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+
+                <!--Chest Press -->
+                <div class="tab-pane fade show active" id="chestPress" role="tabpanel" aria-labelledby="chestPress-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Chest Press</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/chest/machine-chest-press.png" alt="Chest press image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Chest Flys  -->
+                <div class="tab-pane fade" id="chestFlys" role="tabpanel" aria-labelledby="chestFlys-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Chest Flys</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/chest/pecMachine.png" alt="Chest Flys Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Chest Dip -->
+                <div class="tab-pane fade" id="chestDip" role="tabpanel" aria-labelledby="chestFly-tab">
+                  <section class="chest-Dip">
+                    <div>
+                      <h5 class="pushHeaders">Assisted Chest Dip</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/chest/chestdip.png" alt="Chest Flys Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- DumbBell Press -->
+                <div class="tab-pane fade" id="dumbBell" role="tabpanel" aria-labelledby="dumbBell-tab">
+                  <section class="chest-Dip">
+                    <div>
+                      <h5 class="pushHeaders">Dumbbell Bench Press</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/chest/chestdumbbells.png" alt="Dumbbells Press Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Leg Push tabs -->
+          <div class="tab-pane fade" id="v-pills-leg" role="tabpanel" aria-labelledby="v-pills-leg-tab">
+            <div class="showTabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link subTabs borderTabsTest active " id="LegPress-tab" data-toggle="tab" href="#legPush" role="tab" aria-controls="legPress" aria-selected="true">Leg Press</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <!--Leg Press -->
+                <div class="tab-pane fade show active" id="legPush" role="tabpanel" aria-labelledby="leg-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Leg Press</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/legpress.png" alt="Leg press image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Shoulders -->
+          <div class="tab-pane fade" id="v-pills-shoulders" role="tabpanel" aria-labelledby="v-pills-shoulders-tab">
+            <div class="showTabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link subTabs borderTabsTest active" id="shoulderPress-tab" data-toggle="tab" href="#shoulderPress" role="tab" aria-controls="shoulderPress" aria-selected="true">Seated Overhead Press</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="shoulder-FrontRaise-tab" data-toggle="tab" href="#shoulder-FrontRaise" role="tab" aria-controls="shoulder-FrontRaise" aria-selected="false">Shoulder Raise</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="shoulderRaise-tab" data-toggle="tab" href="#shoulderRaise" role="tab" aria-controls="shoulderRaise" aria-selected="false">Dumbbell lateral raise</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="overHead-tab" data-toggle="tab" href="#overHeadPress" role="tab" aria-controls="overHead" aria-selected="false">Overhead Shoulder Press</a>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+
+                <!--Shoulder Press -->
+                <div class="tab-pane fade show active" id="shoulderPress" role="tabpanel" aria-labelledby="shoulderPress-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Seated Dumbbell Overhead Press</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/shoulders/Shoulder-Press.png" alt="Shoulder Press Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- front raise  -->
+                <div class="tab-pane fade" id="shoulder-FrontRaise" role="tabpanel" aria-labelledby="shoulderRaise-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Alternating Dumbbell Front Raise</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/shoulders/Alternating-dumbbell-front-raise.png" alt="Shoulder Front Raise Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Shoulder lateral raise -->
+                <div class="tab-pane fade" id="shoulderRaise" role="tabpanel" aria-labelledby="shoulderRaise-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Dumbbell One-Arm Lateral Raise</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/shoulders/Dumbbell-One-Arm-Lateral-Raise.png" alt="Shoulder Lat Raise Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Overhead Press -->
+                <div class="tab-pane fade" id="overHeadPress" role="tabpanel" aria-labelledby="overHead-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Smith Machine Seated Overhead Press</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/shoulders/Smith-machine-seated-overhead-press-1.png" alt="Dumbbells Press Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Triceps-->
+          <div class="tab-pane fade show" id="v-pills-triceps" role="tabpanel" aria-labelledby="v-pills-triceps-tab">
+            <div class="showTabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link subTabs borderTabsTest active" id="tricepExtension-tab" data-toggle="tab" href="#tricepExtension" role="tab" aria-controls="tricepExtension" aria-selected="true">Machine Extension</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="OverheadTri-tab" data-toggle="tab" href="#OverheadTri" role="tab" aria-controls="OverheadTri" aria-selected="false">Overhead Extension</a>
+                </li>
+                <li class="nav-item subTabs">
+                  <a class="nav-link borderTabsTest" id="dip-tab" data-toggle="tab" href="#pushDown" role="tab" aria-controls="chestDip" aria-selected="false">Push Down</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+
+                <!-- Extension -->
+                <div class="tab-pane fade show active" id="tricepExtension" role="tabpanel" aria-labelledby="tricepExtension-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Machine Triceps Extension</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/triceps/Machine-triceps-extension.png" alt="Machine Triceps Extension Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Overhead -->
+                <div class="tab-pane fade" id="OverheadTri" role="tabpanel" aria-labelledby="OverheadTri-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Seated Dumbbell Overhead Triceps Extension</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/triceps/seated-dumbbell-overhead-triceps-extension.png" alt="">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!--push-down -->
+                <div class="tab-pane fade" id="pushDown" role="tabpanel" aria-labelledby="pushDown-tab">
+                  <section>
+                    <div>
+                      <h5 class="pushHeaders">Triceps Rope Push-Down</h5>
+                      <div class="row">
+                        <div class="col-sm">
+                          <img class="img-fluid" class="img-fluid" src="img/triceps/Triceps-Rope-Push-down.png" alt="Push Down Image">
+                        </div>
+                        <div class="col-sm">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- page buttons -->
   <section>

@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  $(".sideTabs").click(function() {
-    $(".showTabs").show();
-    $(".hideInfo").hide();
-  });
+$(".push").click(function(){
+  $(".pushDays").show();
+});
 
-  $(".subTabs").click(function(){
-    $(".subTabText").hide();
-  });
+
+$(".pull").click(function(){
+  $(".pushDays").hide();
+  $(".pullDays").fadeIn(700);
+});
 
 });
