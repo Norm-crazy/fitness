@@ -1,12 +1,22 @@
+var workOut = $(".pushDays, .pullDays")
+
 $(document).ready(function() {
-$(".push").click(function(){
-  $(".pushDays").show();
-});
+
+// Showing and hiding different workouts
+  $(".push").click(function() {
+    $(".pullDays").hide();
+    $(".pushDays").fadeIn(300);
+  });
+
+  $(".pull").click(function() {
+    $(".pushDays").hide();
+    $(".pullDays").fadeIn(300);
+  });
+
+  $(".cardio").click(function() {
+    $(workOut).hide();
+  });
 
 
-$(".pull").click(function(){
-  $(".pushDays").hide();
-  $(".pullDays").fadeIn(700);
-});
 
 });
